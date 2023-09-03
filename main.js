@@ -17,23 +17,23 @@ let pairCount = 0;
 let heartImage;
 
 function preload() {
-    backgroundImage = loadImage('starbg.png');
-    frontImages['kuma'] = loadImage('kumaPuzzle200.png');
-    frontImages['tokage'] = loadImage('tokagePuzzle200.png');
-    frontImages['neko'] = loadImage('nekoPuzzle200.png');
-    frontImages['pen'] = loadImage('penPuzzle200.png');
-    frontImages['ton'] = loadImage('tonPuzzle200.png');
-    frontImages['puzzle1'] = loadImage('puzzle1_200.png');
-    frontImages['puzzle2'] = loadImage('puzzle2_200.png');
-    frontImages['puzzle3'] = loadImage('puzzle3_200.png');
-    frontImages['puzzle4'] = loadImage('puzzle4_200.png');
-    frontImages['puzzle5'] = loadImage('puzzle5_200.png');
-    backImage = loadImage('backCard200.jpg');
-    heartImage = loadImage('heart150.png')
+    backgroundImage = loadImage('./starbg.png');
+    frontImages['kuma'] = loadImage('./kumaPuzzle200.png');
+    frontImages['tokage'] = loadImage('./tokagePuzzle200.png');
+    frontImages['neko'] = loadImage('./nekoPuzzle200.png');
+    frontImages['pen'] = loadImage('./penPuzzle200.png');
+    frontImages['ton'] = loadImage('./tonPuzzle200.png');
+    frontImages['puzzle1'] = loadImage('./puzzle1_200.png');
+    frontImages['puzzle2'] = loadImage('./puzzle2_200.png');
+    frontImages['puzzle3'] = loadImage('./puzzle3_200.png');
+    frontImages['puzzle4'] = loadImage('./puzzle4_200.png');
+    frontImages['puzzle5'] = loadImage('./puzzle5_200.png');
+    backImage = loadImage('./backCard200.jpg');
+    heartImage = loadImage('./heart150.png')
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(1600, 1000);
 
 
     let cardType = [
@@ -62,7 +62,7 @@ function setup() {
     let cardNumber = 0;
     for (let y = 0; y < 3; y++){
         for (let x = 0; x < 6; x++){
-            let card = createSprite (150 + 210 * x, 185 + 210 * y);
+            let card = createSprite (280 + 210 * x, 280 + 210 * y);
             
             card.addImage('back', backImage);
             
